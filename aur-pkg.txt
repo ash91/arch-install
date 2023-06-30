@@ -1,6 +1,5 @@
 brave-bin
 visual-studio-code-bin
-google-chrome
 librewolf-bin
 sublime-text-4
 timeshift
