@@ -6,3 +6,4 @@ nerd-fonts-meta
 ttf-ms-win11-auto
 sublime-text-4
 timeshift
+google-cloud-cli
