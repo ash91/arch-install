@@ -18,8 +18,9 @@ sudo usermod -aG docker $USER
 # For ansible to work
 export LANG=en_IN.UTF-8
 
-# Enable services for docker
+# Enable services for docker & prometheus
 sudo systemctl enable --now docker
+sudo systemctl enable --now prometheus.service
 
 #Installing starship
 
