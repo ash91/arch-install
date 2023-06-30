@@ -2,8 +2,7 @@ brave-bin
 visual-studio-code-bin
 google-chrome
 librewolf-bin
-nerd-fonts-meta
-ttf-ms-win11-auto
+ttf-ms-win10-auto
 sublime-text-4
 timeshift
 google-cloud-cli
