@@ -28,8 +28,8 @@ curl -sS https://starship.rs/install.sh | sh
 
 cp starship.toml ~/.config/
 
-echo eval "$(starship init bash)" >> .bashrc
-source .bashrc
+echo eval "$(starship init bash)" >> ~/.bashrc
+source ~/.bashrc
 
 #Themeing- WhiteSur
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
