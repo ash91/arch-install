@@ -15,7 +15,7 @@ libreoffice-fresh
 meld
 qbittorrent
 telegram-desktop
-
+plank
 cups
 cups-filters
 cups-pdf
