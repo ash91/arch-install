@@ -29,6 +29,12 @@ cp starship.toml ~/.config/
 
 echo eval "$(starship init bash)" >> ~/.bashrc
 
+#Download plank themes
+
+git clone https://github.com/arcolinux/arcolinux-plank-themes.git
+
+mv arcolinux-plank-themes/* ~/.local/share/plank/themes/
+
 #Themeing- WhiteSur
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
 
