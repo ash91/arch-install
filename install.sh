@@ -18,9 +18,8 @@ sudo usermod -aG docker $USER
 # For ansible to work
 export LANG=en_IN.UTF-8
 
-# Enable services for docker & jenkins
+# Enable services for docker
 sudo systemctl enable --now docker
-sudo systemctl enable --now jenkins
 
 #Installing starship
 
