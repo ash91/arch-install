@@ -16,6 +16,7 @@ meld
 qbittorrent
 telegram-desktop
 plank
+aws-cli
 cups
 cups-filters
 cups-pdf
