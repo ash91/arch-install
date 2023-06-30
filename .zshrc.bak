@@ -1,9 +1,3 @@
-#  ____ _____
-# |  _ \_   _|  Derek Taylor (DistroTube)
-# | | | || |    http://www.youtube.com/c/DistroTube
-# | |_| || |    http://www.gitlab.com/dwt1/
-# |____/ |_|
-# My zsh config. Not much to see here; just some pretty standard stuff.
 
 ### EXPORT
 export TERM="xterm-256color"                      # getting proper colors
