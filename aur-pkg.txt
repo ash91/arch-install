@@ -2,7 +2,5 @@ brave-bin
 visual-studio-code-bin
 google-chrome
 librewolf-bin
-ttf-ms-win10-auto
 sublime-text-4
 timeshift
-google-cloud-cli
