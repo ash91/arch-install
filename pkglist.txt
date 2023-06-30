@@ -7,8 +7,6 @@ docker-compose
 ansible
 prometheus
 jdk17-openjdk
-jdk11-openjdk
-jenkins
 maven
 kubectl
 terraform
