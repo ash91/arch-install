@@ -33,7 +33,7 @@ echo eval "$(starship init bash)" >> ~/.bashrc
 
 git clone https://github.com/arcolinux/arcolinux-plank-themes.git
 
-mv arcolinux-plank-themes/* ~/.local/share/plank/themes/
+mv arcolinux-plank-themes/usr/share/plank/themes/* ~/.local/share/plank/themes/
 
 #Themeing- WhiteSur
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
