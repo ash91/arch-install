@@ -17,6 +17,7 @@ qbittorrent
 telegram-desktop
 plank
 aws-cli
+ttf-ms-fonts
 cups
 cups-filters
 cups-pdf
