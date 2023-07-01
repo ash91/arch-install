@@ -32,4 +32,6 @@ gsfonts
 gutenprint
 splix
 system-config-printer
-
+noto-fonts-emoji
+ttf-meslo-nerd
+ttf-meslo-nerd-font-powerlevel10k
