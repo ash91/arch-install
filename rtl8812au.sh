@@ -11,6 +11,8 @@ unzip rtl8812au-5.6.4.2.zip
 cd rtl8812au-5.6.4.2/
 
 sudo make dkms_install
+cd ..
+rm -rf rtl8812au-5.6.4.2
 
 echo "WIFI Driver installed onto your system please reboot"
 
