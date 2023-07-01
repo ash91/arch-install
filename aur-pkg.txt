@@ -1,4 +1,4 @@
-brave-bin
+google-chrome
 visual-studio-code-bin
 librewolf-bin
 sublime-text-4
