@@ -36,27 +36,27 @@ echo eval "$(starship init bash)" >> ~/.bashrc
 mv plank-themes/* ~/.local/share/plank/themes/
 
 #Themeing- WhiteSur
-git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
+#git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
 
-cd WhiteSur-gtk-theme
+#cd WhiteSur-gtk-theme
 
-./install.sh -c Dark -i manjaro 
+#./install.sh -c Dark -i manjaro 
 
-cd ..
+#cd ..
 
-rm -rf WhiteSur-gtk-theme
+#rm -rf WhiteSur-gtk-theme
 
 
 #WhiteSur Icons
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+#git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
 
-cd WhiteSur-icon-theme
+#cd WhiteSur-icon-theme
 
-sudo ./install.sh 
+#sudo ./install.sh 
 
-cd ..
+#cd ..
 
-rm -rf WhiteSur-icon-theme
+#rm -rf WhiteSur-icon-theme
 
 #WhiteSur Cursors
 git clone https://github.com/vinceliuice/WhiteSur-cursors.git
