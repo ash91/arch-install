@@ -228,9 +228,9 @@ alias playogg='deadbeef *.ogg'
 alias playmp3='deadbeef *.mp3'
 
 # Play video files in current dir by type
-alias playavi='vlc *.avi'
-alias playmov='vlc *.mov'
-alias playmp4='vlc *.mp4'
+alias playavi='mpv *.avi'
+alias playmov='mpv *.mov'
+alias playmp4='mpv *.mp4'
 
 # yt-dlp
 alias yta-aac="yt-dlp --extract-audio --audio-format aac "
