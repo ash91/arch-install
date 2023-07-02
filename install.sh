@@ -20,7 +20,8 @@ export LANG=en_IN.UTF-8
 
 # Enable system services 
 sudo systemctl enable --now fstrim.timer
-sudo systemctl enable --now docker
+sudo systemctl enable --now docker.socket
+sudo systemctl enable --now docker.service
 sudo systemctl enable --now prometheus.service
 
 #Installing starship
@@ -59,23 +60,23 @@ mv plank-themes/* ~/.local/share/plank/themes/
 #rm -rf WhiteSur-icon-theme
 
 #WhiteSur Cursors
-git clone https://github.com/vinceliuice/WhiteSur-cursors.git
+#git clone https://github.com/vinceliuice/WhiteSur-cursors.git
 
-cd WhiteSur-cursors
+#cd WhiteSur-cursors
 
-sudo ./install.sh
+#sudo ./install.sh
 
-cd ..
+#cd ..
 
-rm -rf WhiteSur-cursors
+#rm -rf WhiteSur-cursors
 
 #Kora Icons
 
-git clone https://github.com/bikass/kora.git
+#git clone https://github.com/bikass/kora.git
 
-cd kora
+#cd kora
 
-sudo mv kora /usr/share/icons
+#sudo mv kora /usr/share/icons
 
 echo "Updates done to your system please reboot"
 
