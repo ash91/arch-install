@@ -33,7 +33,7 @@ cp starship.toml ~/.config/
 echo eval "$(starship init bash)" >> ~/.bashrc
 
 #Download plank themes
-
+mkdir -p ~/.local/share/plank/themes/
 mv plank-themes/* ~/.local/share/plank/themes/
 
 #Themeing- WhiteSur
