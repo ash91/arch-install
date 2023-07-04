@@ -7,5 +7,4 @@ google-cloud-cli
 newsflash
 paru
 ulauncher
-ttf-ms-fonts
 ttf-ms-win10-auto
