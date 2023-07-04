@@ -7,3 +7,4 @@ google-cloud-cli
 newsflash
 paru
 ulauncher
+ttf-ms-fonts
