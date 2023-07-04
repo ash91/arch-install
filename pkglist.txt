@@ -2,6 +2,7 @@ htop
 bleachbit
 rhythmbox
 mpv
+vim
 docker
 docker-compose
 ansible
