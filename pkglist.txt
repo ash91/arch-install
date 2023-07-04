@@ -17,6 +17,7 @@ meld
 qbittorrent
 telegram-desktop
 plank
+evince
 aws-cli
 cups
 cups-filters
