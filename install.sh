@@ -21,7 +21,6 @@ export LANG=en_IN.UTF-8
 # Enable system services 
 sudo systemctl enable --now fstrim.timer
 sudo systemctl enable --now docker.socket
-sudo systemctl enable --now docker.service
 sudo systemctl enable --now prometheus.service
 
 #Installing starship
