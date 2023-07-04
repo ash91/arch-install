@@ -3,3 +3,4 @@ visual-studio-code-bin
 librewolf-bin
 sublime-text-4
 timeshift
+google-cloud-cli
