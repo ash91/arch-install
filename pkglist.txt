@@ -17,7 +17,6 @@ qbittorrent
 telegram-desktop
 plank
 aws-cli
-ttf-ms-fonts
 cups
 cups-filters
 cups-pdf
@@ -34,6 +33,5 @@ splix
 system-config-printer
 noto-fonts-emoji
 ttf-meslo-nerd
-ttf-meslo-nerd-font-powerlevel10k
 neofetch
 lolcat
