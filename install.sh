@@ -35,6 +35,8 @@ echo eval "$(starship init bash)" >> ~/.bashrc
 mkdir -p ~/.local/share/plank/themes/
 mv plank-themes/* ~/.local/share/plank/themes/
 
+echo "neofetch | lolcat" >> ~/.bashrc
+
 #Themeing- WhiteSur
 #git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
 
