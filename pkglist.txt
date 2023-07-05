@@ -6,7 +6,6 @@ vim
 docker
 docker-compose
 ansible
-prometheus
 jdk17-openjdk
 maven
 kubectl
