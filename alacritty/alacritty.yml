@@ -14,7 +14,7 @@ window:
   # If both are `0`, this setting is ignored.
   #dimensions:
   #  columns: 0
-  #  lines: 0
+  # lines: 0
 
   # Window position (changes require restart)
   #
@@ -39,7 +39,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 1.0
+  opacity: 0.92
   # opacity: 0.80
 
   # Window decorations
@@ -111,7 +111,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Source Code Pro
+    #family: Source Code Pro
+    family: MesloLGS Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -130,7 +131,8 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
+    family: MesloLGS Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -149,7 +151,8 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
+    family: MesloLGS Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -168,7 +171,8 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Source Code Pro
+    # family: Source Code Pro
+    family: MesloLGS Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -523,7 +527,7 @@ schemes:
   TomorrowNight: &TomorrowNight
      # Default colors
     primary:
-      background: '#1d1f21'
+      background: '#08052B'
       foreground: '#c5c8c6'
 
     # Colors the cursor will use if `custom_cursor_colors` is true
@@ -568,7 +572,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *DoomOne
+colors: *TomorrowNight
 
 # Visual Bell
 #
