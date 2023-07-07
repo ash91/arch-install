@@ -4,7 +4,7 @@
 sudo pacman -Syu --noconfirm
 
 #Installing the required packages
-
+echo "Installing packages"
 sudo pacman -S - < pkglist.txt
 
 # Installing AUR packages
