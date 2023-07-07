@@ -18,6 +18,7 @@ telegram-desktop
 plank
 evince
 aws-cli
+flatpak
 cups
 cups-filters
 cups-pdf
