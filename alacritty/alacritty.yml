@@ -528,7 +528,7 @@ schemes:
      # Default colors
     primary:
       background: '#08052B'
-      foreground: '#c5c8c6'
+      foreground: '#0BF3E5'
 
     # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
