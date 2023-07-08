@@ -3,6 +3,7 @@ bleachbit
 rhythmbox
 mpv
 vim
+gdb
 docker
 docker-compose
 ansible
