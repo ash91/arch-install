@@ -67,7 +67,7 @@ mv plank-themes/* ~/.local/share/plank/themes/
 
 #Install ulauncher themes
 
-mv user-themes ~/.config/ulauncher/
+mv ./user-themes/ ~/.config/ulauncher/
 
 echo "neofetch | lolcat" >> ~/.bashrc
 
