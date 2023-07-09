@@ -8,12 +8,15 @@ git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
 
 mkdir ~/.themes
 mkdir ~/.icons
+mkdir ~/.color-schemes
 
 cd Tokyo-Night-GTK-Theme
 
 mv themes/* ~/.themes/
 
 mv icons/* ~/.icons/
+
+mv extra/text-editor/* ~/.color-schemes
 
 cd ..
 
