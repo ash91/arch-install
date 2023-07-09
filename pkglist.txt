@@ -19,6 +19,16 @@ telegram-desktop
 plank
 evince
 aws-cli
+qemu
+virt-manager
+virt-viewer
+dnsmasq
+vde2
+bridge-utils
+openbsd-netcat
+ebtables
+iptables
+libguestfs
 flatpak
 cups
 cups-filters
