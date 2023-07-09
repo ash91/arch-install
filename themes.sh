@@ -30,6 +30,9 @@ sudo ./install.sh
 
 cd ..
 
+xfconf-query -c xsettings -p /Net/ThemeName -s "Tokyonight-Dark-B"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "oomox-Tokyonight-Dark"
+
 rm -rf Vimix-cursors
 
 rm -rf Tokyo-Night-GTK-Theme
