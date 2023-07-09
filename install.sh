@@ -20,7 +20,32 @@ export LANG=en_IN.UTF-8
 
 # Enable system services 
 sudo systemctl enable --now fstrim.timer
+sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now docker.socket
+
+#Start Default Network for Networking
+
+#VIRSH is a command to directly interact with our VMs from terminal. We use it to list networks, vm-status and various other tools when we need to make tweaks. Here is how we start the default and make it auto-start after reboot.
+
+sudo virsh net-start default
+
+echo "Network default started"
+
+sudo virsh net-autostart default
+
+echo "Network default marked as autostarted"
+
+#Check status with:
+
+sudo virsh net-list --all
+
+# Add User to libvirt to Allow Access to VMs
+
+sudo usermod -aG libvirt $USER
+sudo usermod -aG libvirt-qemu $USER
+sudo usermod -aG kvm $USER
+sudo usermod -aG input $USER
+sudo usermod -aG disk $USER
 
 #Installing starship
 
