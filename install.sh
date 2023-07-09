@@ -67,47 +67,6 @@ mv plank-themes/* ~/.local/share/plank/themes/
 
 echo "neofetch | lolcat" >> ~/.bashrc
 
-#Themeing- WhiteSur
-#git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
-
-#cd WhiteSur-gtk-theme
-
-#./install.sh -c Dark -i manjaro 
-
-#cd ..
-
-#rm -rf WhiteSur-gtk-theme
-
-
-#WhiteSur Icons
-#git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
-
-#cd WhiteSur-icon-theme
-
-#sudo ./install.sh 
-
-#cd ..
-
-#rm -rf WhiteSur-icon-theme
-
-#WhiteSur Cursors
-#git clone https://github.com/vinceliuice/WhiteSur-cursors.git
-
-#cd WhiteSur-cursors
-
-#sudo ./install.sh
-
-#cd ..
-
-#rm -rf WhiteSur-cursors
-
-#Kora Icons
-
-#git clone https://github.com/bikass/kora.git
-
-#cd kora
-
-#sudo mv kora /usr/share/icons
 
 echo "Updates done to your system please reboot"
 
