@@ -15,14 +15,18 @@ mv themes/* ~/.themes/
 
 mv icons/* ~/.icons/
 
+cd ..
+
 #installing the vimix cursors
 
 git clone https://github.com/vinceliuice/Vimix-cursors.git
 
 cd Vimix-cursors
 
-./install.sh
+sudo ./install.sh
 
 cd ..
 
 rm -rf Vimix-cursors
+
+rm -rf Tokyo-Night-GTK-Theme
