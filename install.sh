@@ -67,6 +67,8 @@ mv plank-themes/* ~/.local/share/plank/themes/
 
 echo "neofetch | lolcat" >> ~/.bashrc
 
+echo "Installing tokyo-night theme & icons"
+
 ./themes.sh
 echo "Updates done to your system please reboot"
 
