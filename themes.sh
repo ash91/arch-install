@@ -31,7 +31,7 @@ sudo ./install.sh
 cd ..
 
 xfconf-query -c xsettings -p /Net/ThemeName -s "Tokyonight-Dark-B"
-xfconf-query -c xsettings -p /Net/IconThemeName -s "Tokyonight-Dark-Cyan"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Tokyonight-Dark"
 
 rm -rf Vimix-cursors
 
