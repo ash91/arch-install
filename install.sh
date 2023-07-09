@@ -47,6 +47,12 @@ sudo usermod -aG kvm $USER
 sudo usermod -aG input $USER
 sudo usermod -aG disk $USER
 
+# Install GRUB themes
+git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
+cd Top-5-Bootloader-Themes
+sudo ./install.sh
+cd ..
+
 #Installing starship
 
 curl -sS https://starship.rs/install.sh | sh
