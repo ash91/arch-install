@@ -67,7 +67,7 @@ mv plank-themes/* ~/.local/share/plank/themes/
 
 echo "neofetch | lolcat" >> ~/.bashrc
 
-
+./themes.sh
 echo "Updates done to your system please reboot"
 
 read -p "Enter (y/n)? " answer
