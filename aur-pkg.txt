@@ -8,4 +8,3 @@ newsflash
 paru
 ulauncher
 ttf-ms-win10-auto
-arcolinux-betterlockscreen
