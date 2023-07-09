@@ -70,6 +70,8 @@ echo "neofetch | lolcat" >> ~/.bashrc
 echo "Installing tokyo-night theme & icons"
 
 ./themes.sh
+
+
 echo "Updates done to your system please reboot"
 
 read -p "Enter (y/n)? " answer
