@@ -65,6 +65,10 @@ echo eval "$(starship init bash)" >> ~/.bashrc
 mkdir -p ~/.local/share/plank/themes/
 mv plank-themes/* ~/.local/share/plank/themes/
 
+#Install ulauncher themes
+
+mv user-themes ~/.config/ulauncher/
+
 echo "neofetch | lolcat" >> ~/.bashrc
 
 echo "Installing tokyo-night theme & icons"
