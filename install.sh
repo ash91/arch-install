@@ -52,7 +52,7 @@ git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
 cd Top-5-Bootloader-Themes
 sudo ./install.sh
 cd ..
-
+rm -rf Top-5-Bootloader-Themes
 #Installing starship
 
 curl -sS https://starship.rs/install.sh | sh
