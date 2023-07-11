@@ -30,6 +30,11 @@ sudo ./install.sh
 
 cd ..
 
+sudo flatpak override --filesystem=$HOME/.themes
+sudo flatpak override --filesystem=$HOME/.icons
+flatpak override --user --filesystem=xdg-config/gtk-4.0
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
+
 #xfconf-query -c xsettings -p /Net/ThemeName -s "Tokyonight-Dark-B"
 #xfconf-query -c xsettings -p /Net/IconThemeName -s "Tokyonight-Dark"
 
