@@ -35,6 +35,13 @@ sudo flatpak override --filesystem=$HOME/.icons
 flatpak override --user --filesystem=xdg-config/gtk-4.0
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
+#Applying default gnome theme & icons
+
+gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Dark-B'
+gsettings set org.gnome.desktop.wm.preferences theme 'Tokyonight-Dark-B'
+gsettings set org.gnome.desktop.wm.preferences theme "Tokyonight-Dark-B"
+gsettings set org.gnome.desktop.interface icon-theme 'Tokyonight-Dark'
+
 #xfconf-query -c xsettings -p /Net/ThemeName -s "Tokyonight-Dark-B"
 #xfconf-query -c xsettings -p /Net/IconThemeName -s "Tokyonight-Dark"
 
