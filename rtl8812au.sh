@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sudo pacman -S make dkms paru --noconfirm 
+sudo pacman -S make dkms paru --noconfirm 
 
 #if connected to internet then clone this repo
 #git clone https://github.com/aircrack-ng/rtl8812au.git
