@@ -29,7 +29,6 @@ openbsd-netcat
 ebtables
 iptables
 libguestfs
-flatpak
 cups
 cups-filters
 cups-pdf
