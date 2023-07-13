@@ -27,7 +27,8 @@ gdisk /dev/sda
 ## Sync package
 
 pacman -Syy
-Base Installation
+
+## Base Installation
 
 ## Sync time
 
