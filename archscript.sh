@@ -24,3 +24,12 @@ btrfs su cr /mnt/@snapshots
 btrfs su cr /mnt/@log
 umount /mnt
 
+echo "btrfs configuration"
+
+mount -o compress=zstd:1,noatime,subvol=@ /dev/sda2 /mnt
+mkdir -p /mnt/{boot/efi,home,.snapshots,var/{cache,log}}
+mount -o compress=zstd:1,noatime,subvol=@cache /dev/sda2 /mnt/var/cache
+mount -o compress=zstd:1,noatime,subvol=@home /dev/sda2 /mnt/home
+mount -o compress=zstd:1,noatime,subvol=@log /dev/sda2 /mnt/var/log
+mount -o compress=zstd:1,noatime,subvol=@snapshots /dev/sda2 /mnt/.snapshots
+mount /dev/sda1 /mnt/boot/efi
