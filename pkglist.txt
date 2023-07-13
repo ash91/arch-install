@@ -2,13 +2,11 @@ htop
 bleachbit
 rhythmbox
 mpv
-vim
 gdb
 docker
 docker-compose
 ansible
 jdk17-openjdk
-maven
 alacritty
 libreoffice-fresh
 meld
