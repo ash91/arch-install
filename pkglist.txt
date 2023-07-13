@@ -9,8 +9,6 @@ docker-compose
 ansible
 jdk17-openjdk
 maven
-kubectl
-terraform
 alacritty
 libreoffice-fresh
 meld
@@ -18,7 +16,6 @@ qbittorrent
 telegram-desktop
 plank
 evince
-aws-cli
 qemu
 virt-manager
 virt-viewer
