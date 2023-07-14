@@ -4,6 +4,8 @@ echo "Installing Wi-FI Driver"
 
 ./rtl8812au.sh
 
+rustup default stable
+
 echo "Installing paru(AUR helper)"
 
 git clone https://aur.archlinux.org/paru.git
