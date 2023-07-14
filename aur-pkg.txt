@@ -3,7 +3,5 @@ visual-studio-code-bin
 librewolf-bin
 sublime-text-4
 timeshift
-newsflash
-paru
 ulauncher
 ttf-ms-win10-auto
