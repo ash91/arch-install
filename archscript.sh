@@ -113,7 +113,18 @@ echo "Add user to wheel: uncomment #%wheel ALL=(ALL:ALL) ALL"
 
 EDITOR=vim visudo
 
-echo "Restart"
+exit
 
-echo "exit then"
-echo "reboot"
+echo "Updates done to your system please reboot"
+
+read -p "Enter (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+	echo "Rebooting Now"
+	sleep 3
+	reboot
+    ;;
+    * )
+        echo exit
+    ;;
+esac
