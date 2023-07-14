@@ -2,33 +2,33 @@ echo "## Post install step after logging in"
 
 echo "#Set Time-Zone"
 
-timedatectl set-timezone Asia/Kolkata
+sudo timedatectl set-timezone Asia/Kolkata
 
 echo "#Synchronize Time"
 
-systemctl enable systemd-timesyncd.service
+sudo systemctl enable systemd-timesyncd.service
 
 echo "#Set hostname and localhost"
 
-echo "vasuki" >> /etc/hostname
-echo "127.0.0.1 localhost" >> /etc/hosts
-echo "::1 localhost" >> /etc/hosts
-echo "127.0.1.1 vasuki" >> /etc/hosts
+sudo echo "vasuki" >> /etc/hostname
+sudo echo "127.0.0.1 localhost" >> /etc/hosts
+sudo echo "::1 localhost" >> /etc/hosts
+sudo echo "127.0.1.1 vasuki" >> /etc/hosts
 
 echo " Install the display server"
 
-pacman -S xorg xorg-server mesa
+sudo pacman -S xorg xorg-server mesa
 
 echo "#Setup Desktop Environment"
 
 #Gnome
 
-pacman -S gnome gnome-terminal gnome-themes-extra gnome-tweaks gtk-engine-murrine
+sudo pacman -S gnome gnome-terminal gnome-themes-extra gnome-tweaks gtk-engine-murrine
 
 
 echo "## Enable login screen for gnome"
 
-systemctl enable gdm
+sudo systemctl enable gdm
 
 #KDE
 
