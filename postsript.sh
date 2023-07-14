@@ -73,6 +73,12 @@ systemctl enable gdm
 
 #systemctl enable lightdm
 
+echo "Installing Wi-Fi Driver"
+
+./rtl8812au.sh
+
+echo "Installing user-defined packages"
+
 ./install.sh
 
 echo "Installed display manager to your system please reboot"
