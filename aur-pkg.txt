@@ -4,4 +4,3 @@ librewolf-bin
 sublime-text-4
 timeshift
 ulauncher
-ttf-ms-win10-auto
