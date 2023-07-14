@@ -4,9 +4,6 @@ echo "## Create Swap file"
 
 echo "## switch to root user"
 
-su
-cd /root/
-
 #count=2048==>2GiB
 
 dd if=/dev/zero of=/swapfile bs=1M count=3072 status=progress
