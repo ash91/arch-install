@@ -72,3 +72,17 @@ systemctl enable gdm
 #Enable login screen for xfce
 
 #systemctl enable lightdm
+
+echo "Installed display manager to your system please reboot"
+
+read -p "Enter (y/n)? " answer
+case ${answer:0:1} in
+    y|Y )
+	echo "Rebooting Now"
+	sleep 3
+	reboot
+    ;;
+    * )
+        echo exit
+    ;;
+esac
