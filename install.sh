@@ -1,5 +1,19 @@
 #!/bin/bash
 
+echo "Installing paru(AUR helper)"
+
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd ..
+
+echo "Installing yay(AUR Helper)"
+
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+
 #Update the system
 sudo pacman -Syu --noconfirm
 
@@ -15,11 +29,7 @@ for p in $(< aur-pkg.txt); do yay -S --needed $p --noconfirm; done
 # Add user to docker group
 sudo usermod -aG docker $USER
 
-# For ansible to work
-export LANG=en_IN.UTF-8
-
 # Enable system services 
-sudo systemctl enable --now fstrim.timer
 sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now docker.socket
 
@@ -65,20 +75,9 @@ cp starship.toml ~/.config/
 
 echo eval "$(starship init bash)" >> ~/.bashrc
 
-#Download plank themes
-mkdir -p ~/.local/share/plank/themes/
-mv plank-themes/* ~/.local/share/plank/themes/
-
-#Install ulauncher themes
-
-mv ./user-themes/ ~/.config/ulauncher/
-
 echo "neofetch | lolcat" >> ~/.bashrc
 
-echo "Installing tokyo-night theme & icons"
-
 ./themes.sh
-
 
 echo "Updates done to your system please reboot"
 

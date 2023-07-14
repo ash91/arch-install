@@ -1,5 +1,15 @@
 #!/bin/bash
-#
+
+#Download plank themes
+#mkdir -p ~/.local/share/plank/themes/
+#mv plank-themes/* ~/.local/share/plank/themes/
+
+#Install ulauncher themes
+
+mv ./user-themes/ ~/.config/ulauncher/
+
+echo "Installing tokyo-night theme & icons"
+
 #Install Tokyo-Night-GTK-Theme
 #
 # Cloning the repo
