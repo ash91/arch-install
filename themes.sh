@@ -6,7 +6,7 @@
 
 #Install ulauncher themes
 
-mv ./user-themes/ ~/.config/ulauncher/
+mv ./user-themes/* ~/.config/ulauncher/
 
 echo "Installing tokyo-night theme & icons"
 
