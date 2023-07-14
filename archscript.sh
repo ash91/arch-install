@@ -46,7 +46,7 @@ cat /mnt/etc/fstab
 
 echo "Chroot to installed sytem"
 
-echo "arch-chroot /mnt"
+arch-chroot /mnt
 
 sleep 5
 
