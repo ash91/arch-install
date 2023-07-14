@@ -117,10 +117,10 @@ EDITOR=vim visudo
 
 #Set hostname and localhost
 
-sudo echo "vasuki" >> /etc/hostname
-sudo echo "127.0.0.1 localhost" >> /etc/hosts
-sudo echo "::1 localhost" >> /etc/hosts
-sudo echo "127.0.1.1 vasuki" >> /etc/hosts
+echo "vasuki" >> /etc/hostname
+echo "127.0.0.1     localhost" >> /etc/hosts
+echo "::1           localhost" >> /etc/hosts
+echo "127.0.1.1     vasuki" >> /etc/hosts
 
 
 exit
