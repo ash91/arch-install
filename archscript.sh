@@ -125,16 +125,4 @@ sudo echo "127.0.1.1 vasuki" >> /etc/hosts
 
 exit
 
-echo "Arch installed to your system please reboot"
-
-read -p "Enter (y/n)? " answer
-case ${answer:0:1} in
-    y|Y )
-	echo "Rebooting Now"
-	sleep 3
-	reboot
-    ;;
-    * )
-        echo exit
-    ;;
-esac
+reboot
