@@ -84,6 +84,8 @@ echo "neofetch | lolcat" >> ~/.bashrc
 
 ./themes.sh
 
+./zram.sh
+
 echo "Updates done to your system please reboot"
 
 read -p "Enter (y/n)? " answer
