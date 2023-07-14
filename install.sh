@@ -64,10 +64,6 @@ sudo usermod -aG kvm $USER
 sudo usermod -aG input $USER
 sudo usermod -aG disk $USER
 
-echo "Installing Rust-Lang"
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 # Install GRUB themes
 git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
 cd Top-5-Bootloader-Themes
