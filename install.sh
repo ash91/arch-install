@@ -32,6 +32,7 @@ sudo usermod -aG docker $USER
 # Enable system services 
 sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now docker.socket
+sudo systemctl enable gdm
 
 #Start Default Network for Networking
 

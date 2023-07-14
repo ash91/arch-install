@@ -1,3 +1,11 @@
+xorg 
+xorg-server
+mesa
+gnome
+gnome-terminal
+gnome-themes-extra
+gnome-tweaks 
+gtk-engine-murrine
 htop
 bleachbit
 rhythmbox

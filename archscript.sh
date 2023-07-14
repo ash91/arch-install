@@ -91,6 +91,7 @@ systemctl enable reflector.timer
 systemctl enable fstrim.timer
 systemctl enable firewalld
 systemctl enable acpid
+systemctl enable systemd-timesyncd.service
 
 echo "Grub installation"
 
@@ -113,6 +114,14 @@ mkinitcpio -p linux
 echo "Add user to wheel: uncomment #%wheel ALL=(ALL:ALL) ALL"
 
 EDITOR=vim visudo
+
+#Set hostname and localhost
+
+sudo echo "vasuki" >> /etc/hostname
+sudo echo "127.0.0.1 localhost" >> /etc/hosts
+sudo echo "::1 localhost" >> /etc/hosts
+sudo echo "127.0.1.1 vasuki" >> /etc/hosts
+
 
 exit
 
