@@ -42,8 +42,5 @@ noto-fonts-emoji
 ttf-meslo-nerd
 neofetch
 lolcat
-gnome
-gnome-extra
 gnome-themes-extra 
 gtk-engine-murrine
-
