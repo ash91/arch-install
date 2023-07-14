@@ -15,3 +15,4 @@ rm -rf rtl8812au
 
 echo "WIFI Driver installed onto your system"
 
+ch
