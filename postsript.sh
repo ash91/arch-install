@@ -1,29 +1,5 @@
 echo "## Post install step after logging in"
 
-echo "## Create Swap file"
-
-echo "## switch to root user"
-
-#count=2048==>2GiB
-
-dd if=/dev/zero of=/swapfile bs=1M count=3072 status=progress
-
-echo "#Change permission (r+w)"
-
-chmod 600 /swapfile
-mkswap /swapfile
-
-#create backup file of fstab
-
-cp /etc/fstab /etc/fstab.bak
-echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
-cat /etc/fstab
-mount -a
-
-#to check if swap is active
-
-swapon -a
-
 echo "#Set Time-Zone"
 
 timedatectl set-timezone Asia/Kolkata
