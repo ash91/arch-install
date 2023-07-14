@@ -41,5 +41,10 @@ noto-fonts-emoji
 ttf-meslo-nerd
 neofetch
 lolcat
+<<<<<<< HEAD
 
 
+=======
+gnome-themes-extra 
+gtk-engine-murrine
+>>>>>>> fe628eb2cbb1af2c602cfebbf160b61ec92ebb2b
