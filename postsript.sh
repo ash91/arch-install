@@ -8,12 +8,12 @@ echo "#Synchronize Time"
 
 sudo systemctl enable systemd-timesyncd.service
 
-echo "#Set hostname and localhost"
+# echo "#Set hostname and localhost"
 
-sudo echo "vasuki" >> /etc/hostname
-sudo echo "127.0.0.1 localhost" >> /etc/hosts
-sudo echo "::1 localhost" >> /etc/hosts
-sudo echo "127.0.1.1 vasuki" >> /etc/hosts
+# sudo echo "vasuki" >> /etc/hostname
+# sudo echo "127.0.0.1 localhost" >> /etc/hosts
+# sudo echo "::1 localhost" >> /etc/hosts
+# sudo echo "127.0.1.1 vasuki" >> /etc/hosts
 
 echo " Install the display server"
 
