@@ -125,4 +125,6 @@ sudo echo "127.0.1.1 vasuki" >> /etc/hosts
 
 exit
 
+echo "Arch installed to your system please reboot"
+
 reboot
