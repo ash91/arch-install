@@ -73,6 +73,8 @@ systemctl enable gdm
 
 #systemctl enable lightdm
 
+./install.sh
+
 echo "Installed display manager to your system please reboot"
 
 read -p "Enter (y/n)? " answer
