@@ -8,19 +8,19 @@
 
 cp -r ./user-themes/ ~/.config/ulauncher/
 
-echo "Installing tokyo-night theme & icons"
+echo "Installing rose-pine theme & icons"
 
-#Install Tokyo-Night-GTK-Theme
-#
+#Install Rose-Pine-GTK-Theme
+
 # Cloning the repo
 
-git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
+git clone https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git
 
 mkdir ~/.themes
 mkdir ~/.icons
 mkdir ~/.color-schemes
 
-cd Tokyo-Night-GTK-Theme
+cd Rose-Pine-GTK-Theme
 
 mv themes/* ~/.themes/
 
@@ -47,14 +47,14 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 #Applying default gnome theme & icons
 
-gsettings set org.gnome.desktop.interface gtk-theme 'Tokyonight-Dark-B'
-gsettings set org.gnome.desktop.wm.preferences theme 'Tokyonight-Dark-B'
-gsettings set org.gnome.desktop.wm.preferences theme "Tokyonight-Dark-B"
-gsettings set org.gnome.desktop.interface icon-theme 'Tokyonight-Dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'RosePine-Main-B'
+gsettings set org.gnome.desktop.wm.preferences theme 'RosePine-Main-B'
+gsettings set org.gnome.desktop.wm.preferences theme "RosePine-Main-B"
+gsettings set org.gnome.desktop.interface icon-theme 'Rose-Pine-Moon'
 
 #xfconf-query -c xsettings -p /Net/ThemeName -s "Tokyonight-Dark-B"
 #xfconf-query -c xsettings -p /Net/IconThemeName -s "Tokyonight-Dark"
 
 rm -rf Vimix-cursors
 
-rm -rf Tokyo-Night-GTK-Theme
+rm -rf Rose-Pine-GTK-Theme
