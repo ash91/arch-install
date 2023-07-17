@@ -1,6 +1,7 @@
-gnome
-gnome-terminal
-gnome-themes-extra
+xfce
+xfce-goodies
+lightdm
+lightdm-gtk-greeter
 gtk-engine-murrine
 ttf-indic-otf
 bleachbit

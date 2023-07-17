@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #Download plank themes
-#mkdir -p ~/.local/share/plank/themes/
-#cp -r plank-themes/* ~/.local/share/plank/themes/
+mkdir -p ~/.local/share/plank/themes/
+cp -r plank-themes/* ~/.local/share/plank/themes/
 
 #Install ulauncher themes
 
@@ -47,13 +47,13 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 #Applying default gnome theme & icons
 
-gsettings set org.gnome.desktop.interface gtk-theme 'RosePine-Main-B'
-gsettings set org.gnome.desktop.wm.preferences theme 'RosePine-Main-B'
-gsettings set org.gnome.desktop.wm.preferences theme "RosePine-Main-B"
-gsettings set org.gnome.desktop.interface icon-theme 'Rose-Pine-Moon'
+# gsettings set org.gnome.desktop.interface gtk-theme 'RosePine-Main-B'
+# gsettings set org.gnome.desktop.wm.preferences theme 'RosePine-Main-B'
+# gsettings set org.gnome.desktop.wm.preferences theme "RosePine-Main-B"
+# gsettings set org.gnome.desktop.interface icon-theme 'Rose-Pine-Moon'
 
-#xfconf-query -c xsettings -p /Net/ThemeName -s "Tokyonight-Dark-B"
-#xfconf-query -c xsettings -p /Net/IconThemeName -s "Tokyonight-Dark"
+xfconf-query -c xsettings -p /Net/ThemeName -s "RosePine-Main-B"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Rose-Pine-Moon"
 
 rm -rf Vimix-cursors
 
