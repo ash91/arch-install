@@ -23,6 +23,10 @@ cd ..
 #Update the system
 sudo pacman -Syu --noconfirm
 
+#sudo pacman -S xfce xfce-goodies lightdm lightdm-gtk-greeter
+#sudo pacman -S gnome gnome-themes-extra gnome-terminal gnome-tweaks
+#sudo pacman -S kde kde-meta
+
 #Installing the required packages
 echo "Installing packages"
 sudo pacman -S - < pkglist.txt
@@ -38,7 +42,7 @@ sudo usermod -aG docker $USER
 # Enable system services 
 sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now docker.socket
-sudo systemctl enable --now lightdm
+#sudo systemctl enable --now lightdm
 
 #Start Default Network for Networking
 
