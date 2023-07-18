@@ -37,3 +37,5 @@ noto-fonts-emoji
 ttf-meslo-nerd
 neofetch
 lolcat
+ttf-carlito
+
