@@ -4,3 +4,6 @@ librewolf-bin
 sublime-text-4
 timeshift
 ulauncher
+paru-bin
+betterlockscreen
+redshift-gtk

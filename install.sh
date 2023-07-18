@@ -1,24 +1,24 @@
 #!/bin/bash
 
-echo "Installing Wi-FI Driver"
+#echo "Installing Wi-FI Driver"
 
-./rtl8812au.sh
+#./rtl8812au.sh
 
-rustup default stable
+#rustup default stable
 
-echo "Installing paru(AUR helper)"
+#echo "Installing paru(AUR helper)"
 
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-cd ..
+#git clone https://aur.archlinux.org/paru.git
+#cd paru
+#makepkg -si
+#cd ..
 
-echo "Installing yay(AUR Helper)"
+#echo "Installing yay(AUR Helper)"
 
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si
+#cd ..
 
 #Update the system
 sudo pacman -Syu --noconfirm

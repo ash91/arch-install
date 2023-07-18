@@ -1,5 +1,4 @@
 #!/bin/bash
-setfont ter-132b
 
 echo "Create partitions before proceeding"
 
