@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Installing Wi-FI Driver"
+#echo "Installing Wi-FI Driver"
 
 #./rtl8812au.sh
 
