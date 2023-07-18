@@ -4,10 +4,6 @@
 mkdir -p ~/.local/share/plank/themes/
 cp -r plank-themes/* ~/.local/share/plank/themes/
 
-#Install ulauncher themes
-
-cp -r ./user-themes/ ~/.config/ulauncher/
-
 echo "Installing rose-pine theme & icons"
 
 #Install Rose-Pine-GTK-Theme
