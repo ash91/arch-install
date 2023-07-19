@@ -1,4 +1,3 @@
-gtk-engine-murrine
 ttf-indic-otf
 bleachbit
 rhythmbox
