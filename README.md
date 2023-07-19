@@ -1,7 +1,5 @@
 # arch-install
-
-![logo](https://github.com/ash91/arch-install/assets/6077624/c602bd53-0140-438d-b581-e13141ed14c6)
-
+![logo](https://github.com/ash91/arch-install/assets/6077624/a9de1dec-1d76-45b5-b01a-ae6d4ce50743)
 
 Install Arch Linux & packages.
 
