@@ -4,15 +4,6 @@
 
 #./rtl8812au.sh
 
-#rustup default stable
-
-#echo "Installing paru(AUR helper)"
-
-#git clone https://aur.archlinux.org/paru.git
-#cd paru
-#makepkg -si
-#cd ..
-
 #echo "Installing yay(AUR Helper)"
 
 #git clone https://aur.archlinux.org/yay.git
@@ -23,8 +14,8 @@
 #Update the system
 sudo pacman -Syu --noconfirm
 
-#sudo pacman -S xfce xfce-goodies lightdm lightdm-gtk-greeter
-#sudo pacman -S gnome gnome-themes-extra gnome-terminal gnome-tweaks
+yay -S xfce4 xfce-goodies lightdm lightdm-gtk-greeter
+
 #sudo pacman -S kde kde-meta
 
 #Installing the required packages
