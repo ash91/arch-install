@@ -10,7 +10,7 @@ read distro;
 
 case $distro in
     1) yay -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter --noconfirm;;
-    2) yay -S gnome gnome-extra gnome-tweaks --noconfirm;;
+    2) yay -S gnome gnome-extra gnome-themes-extra gnome-tweaks gtk-engine-murrine --noconfirm;;
     3) yay -S plasma kde-applications --noconfirm;;
     4) yay -S cinnamon --noconfirm;;
     *) echo "Please enter valid choice."
