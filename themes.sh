@@ -1,5 +1,20 @@
 #!/bin/bash
 
+echo "Selete Desktop Environment to Install"
+echo "1 - XFCE"
+echo "2 - GNOME"
+echo "3 - KDE"
+echo "4 - Cinnamon"
+
+read distro;
+
+case $distro in
+    1) yay -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter --noconfirm;;
+    2) yay -S gnome gnome-extra gnome-tweaks --noconfirm;;
+    3) yay -S plasma kde-applications --noconfirm;;
+    4) yay -S cinnamon --noconfirm;;
+    *) echo "Please enter valid choice."
+esac
 #Download plank themes
 mkdir -p ~/.local/share/plank/themes/
 cp -r plank-themes/* ~/.local/share/plank/themes/
