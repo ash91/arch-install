@@ -14,10 +14,6 @@
 #Update the system
 sudo pacman -Syu --noconfirm
 
-yay -S xfce4 xfce-goodies lightdm lightdm-gtk-greeter
-
-#sudo pacman -S kde kde-meta
-
 #Installing the required packages
 echo "Installing packages"
 sudo pacman -S - < pkglist.txt
