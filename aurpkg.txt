@@ -1,9 +1,9 @@
+betterlockscreen
 google-chrome
-visual-studio-code-bin
 librewolf-bin
+paru-bin
+redshift-gtk
 sublime-text-4
 timeshift
 ulauncher
-paru-bin
-betterlockscreen
-redshift-gtk
+visual-studio-code-bin
