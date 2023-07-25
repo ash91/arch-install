@@ -37,16 +37,14 @@ echo "Set Root Password"
 
 passwd root
 
-echo "Add User (Replace [USERNAME] with your name)
 
-useradd -m -g users -G wheel [USERNAME]
-passwd [USERNAME]"
+# ------------------------------------------------------
+echo "# Add User"
+# ------------------------------------------------------
+echo "Add user $username"
+useradd -m -G wheel $username
+passwd $username
 
-user=""
-echo -n "Enter username: "
-read user
-useradd -m -g users -G wheel $user
-passwd $user
 
 
 echo "Enable Services"
