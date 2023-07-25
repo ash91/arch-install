@@ -4,6 +4,6 @@ librewolf-bin
 paru-bin
 redshift-gtk
 sublime-text-4
-timeshift
+timeshift-bin
 ulauncher
 visual-studio-code-bin
