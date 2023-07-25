@@ -4,12 +4,12 @@
 
 #./rtl8812au.sh
 
-#echo "Installing yay(AUR Helper)"
+echo "Installing yay(AUR Helper)"
 
-#git clone https://aur.archlinux.org/yay.git
-#cd yay
-#makepkg -si
-#cd ..
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
 
 #Update the system
 sudo pacman -Syu --noconfirm
