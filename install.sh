@@ -14,11 +14,11 @@ cd ..
 #Update the system
 sudo pacman -Syu --noconfirm
 
-yay -Rsu iptables
+#yay -Rsu iptables
 
 #Installing the required packages
 echo "Installing packages"
-sudo pacman -S - < package.txt --noconfirm
+sudo pacman -S - < package.txt
 
 # Installing AUR packages
 echo "Installing AUR packages"
