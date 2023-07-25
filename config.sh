@@ -45,9 +45,9 @@ passwd [USERNAME]"
 
 user=""
 echo -n "Enter username: "
-read user
-useradd -m -G wheel $user
-passwd $user
+read username
+useradd -m -G wheel $username
+passwd $username
 
 echo "Enable Services"
 
