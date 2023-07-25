@@ -92,7 +92,7 @@ read -p "Open sudoers now?" c
 EDITOR=vim sudo -E visudo
 usermod -aG wheel $username
 
-yay -Rsu iptables-nft
+pacman -Rsu iptables-nft
 
 # ------------------------------------------------------
 # Copy installation scripts to home directory 
