@@ -15,7 +15,6 @@ foomatic-db-ppds
 gdb
 gsfonts
 gutenprint
-iptables
 jdk17-openjdk
 libguestfs
 libreoffice-fresh
