@@ -16,7 +16,7 @@ sudo pacman -Syu --noconfirm
 
 #Installing the required packages
 echo "Installing packages"
-sudo pacman -S - < pkglist.txt --noconfirm
+sudo pacman -S - < package.txt --noconfirm
 
 # Installing AUR packages
 echo "Installing AUR packages"
