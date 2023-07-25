@@ -22,6 +22,7 @@ efibootmgr
 exa
 firewalld
 flatpak
+git
 grub
 grub-btrfs
 gvfs

@@ -97,9 +97,9 @@ usermod -aG wheel $username
 # -
 
 
-cp /archinstall/install.sh /home/$username/Downloads
-cp /archinstall/themes.sh /home/$username/Downloads
-cp /archinstall/zram.sh /home/$username/Downloads
+cp /archinstall/install.sh /home/$username/Downloads/
+cp /archinstall/themes.sh /home/$username/Downloads/
+cp /archinstall/zram.sh /home/$username/Downloads/
 
 clear
 
