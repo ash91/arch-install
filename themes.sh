@@ -9,10 +9,10 @@ echo "4 - Cinnamon"
 read distro;
 
 case $distro in
-    1) yay -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter --noconfirm;;
-    2) yay -S gnome gnome-extra gnome-themes-extra gnome-tweaks gtk-engine-murrine --noconfirm;;
-    3) yay -S plasma kde-applications --noconfirm;;
-    4) yay -S cinnamon --noconfirm;;
+    1) yay -S xfce4 xfce4-goodies lightdm lightdm-gtk-greeter --noconfirm && sudo systemctl enable lightdm;;
+    2) yay -S gnome gnome-extra gnome-themes-extra gnome-tweaks gtk-engine-murrine --noconfirm && sudo systemctl enable gdm;;
+    3) yay -S plasma kde-applications --noconfirm && sudo systemctl enable sddm;;
+    4) yay -S cinnamon --noconfirm && sudo systemctl enable lightdm;;
     *) echo "Please enter valid choice."
 esac
 #Download plank themes
@@ -40,13 +40,13 @@ mkdir ~/.icons
 
 #installing the vimix cursors
 
-git clone https://github.com/vinceliuice/Vimix-cursors.git
+# git clone https://github.com/vinceliuice/Vimix-cursors.git
 
-cd Vimix-cursors
+# cd Vimix-cursors
 
-sudo ./install.sh
+# sudo ./install.sh
 
-cd ..
+# cd ..
 
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=$HOME/.icons
@@ -63,6 +63,6 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 #xfconf-query -c xsettings -p /Net/ThemeName -s "RosePine-Main-B"
 #xfconf-query -c xsettings -p /Net/IconThemeName -s "Rose-Pine-Moon"
 
-rm -rf Vimix-cursors
+# rm -rf Vimix-cursors
 
 #rm -rf Rose-Pine-GTK-Theme
