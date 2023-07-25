@@ -21,6 +21,7 @@ libreoffice-fresh
 lolcat
 meld
 mpv
+nano
 neofetch
 noto-fonts-emoji
 openbsd-netcat
