@@ -1,5 +1,18 @@
 #!/bin/bash
 
+echo "    _             _       ___           _        _ _ "
+echo "   / \   _ __ ___| |__   |_ _|_ __  ___| |_ __ _| | |"
+echo "  / _ \ | '__/ __| '_ \   | || '_ \/ __| __/ _' | | |"
+echo " / ___ \| | | (__| | | |  | || | | \__ \ || (_| | | |"
+echo "/_/   \_\_|  \___|_| |_| |___|_| |_|___/\__\__,_|_|_|"
+echo ""
+echo "by Ashish Deshpande"
+echo "-----------------------------------------------------"
+echo ""
+echo "Warning: Run this script at your own risk."
+echo ""
+
+
 echo "Create partitions before proceeding"
 
 echo "Use fdisk or gdisk to create partitions"
@@ -45,104 +58,16 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 
 cat /mnt/etc/fstab
 
+# ------------------------------------------------------
+# Install configuration scripts
+# 
+
+mkdir /mnt/archinstall
+cp config.sh /mnt/archinstall
+cp install.sh /mnt/archinstall
+cp themes.sh /mnt/archinstall
+cp zram.sh /mnt/archinstall
+
 echo "Chroot to installed sytem"
 
-# arch-chroot /mnt
-
-echo "Set System Time"
-
-ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
-hwclock --systohc
-
-echo "Update mirrorlist"
-
-reflector -c "India" -p https -a 3 --sort rate --save /etc/pacman.d/mirrorlist
-
-echo "Synchronize mirrors"
-
-pacman -Syy
-
-echo "Install Packages"
-
-pacman -S - < basepkg.txt --noconfirm
-
-echo "set lang utf8 US"
-
-echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-locale-gen
-echo "LANG=en_US.UTF-8" >> /etc/locale.conf
-
-echo "Set Root Password"
-
-passwd root
-
-echo "Add User (Replace [USERNAME] with your name)
-
-useradd -m -g users -G wheel [USERNAME]
-passwd [USERNAME]"
-
-user=""
-echo -n "Enter username: "
-read user
-useradd -m -g users -G wheel $user
-passwd $user
-
-
-echo "Enable Services"
-
-systemctl enable NetworkManager
-systemctl enable bluetooth
-systemctl enable cups.service
-systemctl enable sshd
-systemctl enable avahi-daemon
-systemctl enable reflector.timer
-systemctl enable fstrim.timer
-systemctl enable firewalld
-systemctl enable acpid
-systemctl enable systemd-timesyncd.service
-
-echo "Grub installation"
-
-#grub-install --target=i386-pc --recheck /dev/vda # for MBR installation
-
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable # for UEFI
-
-grub-mkconfig -o /boot/grub/grub.cfg
-
-
-echo "## Add btrfs and setfont to mkinitcpio
-
-## Before: BINARIES=()
-
-## After: BINARIES=(btrfs setfont)"
-
-sed -i 's/BINARIES=()/BINARIES=(btrfs setfont)/g' /etc/mkinitcpio.conf
-mkinitcpio -p linux
-
-echo "Add user to wheel: uncomment #%wheel ALL=(ALL:ALL) ALL"
-
-EDITOR=vim visudo
-
-#Set hostname and localhost
-
-echo "vasuki" >> /etc/hostname
-echo "127.0.0.1     localhost" >> /etc/hosts
-echo "::1           localhost" >> /etc/hosts
-echo "127.0.1.1     vasuki" >> /etc/hosts
-
-
-# exit
-
-echo "Arch installed to your system please reboot"
-
-read -p "Enter (y/n)? " answer
-case ${answer:0:1} in
-    y|Y )
-	echo "Rebooting Now"
-	sleep 3
-	reboot
-    ;;
-    * )
-        echo exit
-    ;;
-esac
+arch-chroot /mnt ./archinstall/config.sh
