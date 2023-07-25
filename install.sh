@@ -29,7 +29,7 @@ for p in $(< aurpkg.txt); do yay -S --needed $p --noconfirm; done
 sudo usermod -aG docker $USER
 
 # Enable system services 
-sudo systemctl enable --now libvirtd.service
+#sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now docker.socket
 #sudo systemctl enable --now lightdm
 
@@ -37,25 +37,25 @@ sudo systemctl enable --now docker.socket
 
 #VIRSH is a command to directly interact with our VMs from terminal. We use it to list networks, vm-status and various other tools when we need to make tweaks. Here is how we start the default and make it auto-start after reboot.
 
-sudo virsh net-start default
+# sudo virsh net-start default
 
-echo "Network default started"
+# echo "Network default started"
 
-sudo virsh net-autostart default
+# sudo virsh net-autostart default
 
-echo "Network default marked as autostarted"
+# echo "Network default marked as autostarted"
 
-#Check status with:
+# #Check status with:
 
-sudo virsh net-list --all
+# sudo virsh net-list --all
 
-# Add User to libvirt to Allow Access to VMs
+# # Add User to libvirt to Allow Access to VMs
 
-sudo usermod -aG libvirt $USER
-sudo usermod -aG libvirt-qemu $USER
-sudo usermod -aG kvm $USER
-sudo usermod -aG input $USER
-sudo usermod -aG disk $USER
+# sudo usermod -aG libvirt $USER
+# sudo usermod -aG libvirt-qemu $USER
+# sudo usermod -aG kvm $USER
+# sudo usermod -aG input $USER
+# sudo usermod -aG disk $USER
 
 # Install GRUB themes
 git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes

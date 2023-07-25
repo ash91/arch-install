@@ -1,11 +1,9 @@
 
 alacritty
 bleachbit
-bridge-utils
 cups-pdf
 docker
 docker-compose
-ebtables
 evince
 foomatic-db
 foomatic-db-gutenprint-ppds
@@ -16,7 +14,6 @@ gdb
 gsfonts
 gutenprint
 jdk17-openjdk
-libguestfs
 libreoffice-fresh
 lolcat
 meld
@@ -24,17 +21,12 @@ mpv
 nano
 neofetch
 noto-fonts-emoji
-openbsd-netcat
 plank
 qbittorrent
-qemu
 rhythmbox
-splix
 system-config-printer
 telegram-desktop
 ttf-carlito
 ttf-indic-otf
 ttf-meslo-nerd
-vde2
-virt-manager
-virt-viewer
+
