@@ -12,3 +12,7 @@ Install Arch Linux & packages.
 <br>
 
 </div>
+
+# Incase of network not connecting post-installation, please go through this article for trouble shooting
+
+https://phoenixnap.com/kb/temporary-failure-in-name-resolution
