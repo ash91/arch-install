@@ -99,9 +99,9 @@ pacman -Rsu iptables-nft
 # -
 
 
-cp /archinstall/install.sh /home/$username/Downloads/
-cp /archinstall/themes.sh /home/$username/Downloads/
-cp /archinstall/zram.sh /home/$username/Downloads/
+cp /archinstall/install.sh /home/$username/
+cp /archinstall/themes.sh /home/$username/
+cp /archinstall/zram.sh /home/$username/
 
 clear
 
