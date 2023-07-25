@@ -3,7 +3,6 @@
 #echo "Installing Wi-FI Driver"
 
 #./rtl8812au.sh
-sudo pacman -Runs iptables
 
 echo "Installing yay(AUR Helper)"
 
@@ -14,6 +13,8 @@ cd ..
 
 #Update the system
 sudo pacman -Syu --noconfirm
+
+yay -Rsu iptables
 
 #Installing the required packages
 echo "Installing packages"
