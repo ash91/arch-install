@@ -62,7 +62,7 @@ pacman -Syy
 
 echo "Install Packages"
 
-pacman -S - < base.txt --noconfirm
+pacman -S - < basepkg.txt --noconfirm
 
 echo "set lang utf8 US"
 
