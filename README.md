@@ -2,7 +2,7 @@
 
 <div align = center>
 
-<img src="arch.png" width="750" height="300" alt="banner">
+<img src="arch.png" width="300" height="300" alt="banner">
 
 <br>
 Install Arch Linux & packages.
