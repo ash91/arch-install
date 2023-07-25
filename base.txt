@@ -32,7 +32,6 @@ htop
 inetutils
 intel-ucode
 ipset
-iptables
 linux
 linux-firmware
 linux-headers
