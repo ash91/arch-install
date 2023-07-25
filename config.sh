@@ -92,17 +92,6 @@ read -p "Open sudoers now?" c
 EDITOR=vim sudo -E visudo
 usermod -aG wheel $username
 
-pacman -Rsu iptables-nft
-
-# ------------------------------------------------------
-# Copy installation scripts to home directory 
-# -
-
-
-cp /archinstall/install.sh /home/$username/
-cp /archinstall/themes.sh /home/$username/
-cp /archinstall/zram.sh /home/$username/
-
 clear
 
 echo "     _                   "
