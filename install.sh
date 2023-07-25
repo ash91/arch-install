@@ -16,12 +16,12 @@ sudo pacman -Syu --noconfirm
 
 #Installing the required packages
 echo "Installing packages"
-sudo pacman -S - < pkglist.txt
+sudo pacman -S - < package.txt --noconfirm
 
 # Installing AUR packages
 echo "Installing AUR packages"
 
-for p in $(< aur-pkg.txt); do yay -S --needed $p --noconfirm; done
+for p in $(< aurpkg.txt); do yay -S --needed $p --noconfirm; done
 
 # Add user to docker group
 sudo usermod -aG docker $USER
