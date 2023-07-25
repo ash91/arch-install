@@ -38,14 +38,16 @@ echo "Set Root Password"
 passwd root
 
 
-# ------------------------------------------------------
-echo "# Add User"
-# ------------------------------------------------------
-echo "Add user $username"
-useradd -m -G wheel $username
-passwd $username
+echo "Add User (Replace [USERNAME] with your name)
 
+useradd -m -G wheel [USERNAME]
+passwd [USERNAME]"
 
+user=""
+echo -n "Enter username: "
+read user
+useradd -m -G wheel $user
+passwd $user
 
 echo "Enable Services"
 
@@ -95,9 +97,9 @@ usermod -aG wheel $username
 # -
 
 
-cp /archinstall/install.sh /home/$username
-cp /archinstall/themes.sh /home/$username
-cp /archinstall/zram.sh /home/$username
+cp /archinstall/install.sh /home/$username/Downloads
+cp /archinstall/themes.sh /home/$username/Downloads
+cp /archinstall/zram.sh /home/$username/Downloads
 
 clear
 
@@ -110,6 +112,4 @@ echo "                         "
 echo ""
 
 
-exit
-
-reboot
+echo "exit from chroot and then reboot"
