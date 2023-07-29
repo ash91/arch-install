@@ -6,8 +6,8 @@
 
 echo "Installing yay(AUR Helper)"
 
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/yay-bin
+cd yay-bin
 makepkg -si
 cd ..
 
