@@ -11,6 +11,7 @@ bat
 bluez
 bluez-utils
 brightnessctl
+btrfs-progs
 cups
 dialog
 dkms
@@ -36,6 +37,7 @@ linux
 linux-firmware
 linux-headers
 linux-headers
+man
 mtools
 netctl
 networkmanager
