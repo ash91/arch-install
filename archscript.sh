@@ -23,10 +23,10 @@ timedatectl set-ntp true
 
 echo "Format partitions (Replace [EFI] and [BOOT] with your partitions shown with lsblk)"
 
-fdisk /dev/vda
+fdisk /dev/sda
 
-mkfs.fat -F 32 /dev/vda1
-mkfs.btrfs -f /dev/vda2
+mkfs.fat -F 32 /dev/sda1
+mkfs.btrfs -f /dev/sda2
 
 echo "Mount points for btrfs"
 
@@ -40,13 +40,13 @@ umount /mnt
 
 echo "btrfs configuration"
 
-mount -o compress=zstd,noatime,ssd,subvol=@ /dev/vda2 /mnt
+mount -o compress=zstd:1,noatime,ssd,subvol=@ /dev/sda2 /mnt
 mkdir -p /mnt/{boot/efi,home,.snapshots,var/{cache,log}}
-mount -o compress=zstd,noatime,subvol=@cache /dev/vda2 /mnt/var/cache
-mount -o compress=zstd,noatime,ssd,subvol=@home /dev/vda2 /mnt/home
-mount -o compress=zstd,noatime,subvol=@log /dev/vda2 /mnt/var/log
-mount -o compress=zstd,noatime,subvol=@snapshots /dev/vda2 /mnt/.snapshots
-mount /dev/vda1 /mnt/boot/efi
+mount -o compress=zstd:1,noatime,subvol=@cache /dev/sda2 /mnt/var/cache
+mount -o compress=zstd:1,noatime,ssd,subvol=@home /dev/sda2 /mnt/home
+mount -o compress=zstd:1,noatime,subvol=@log /dev/sda2 /mnt/var/log
+mount -o compress=zstd:1,noatime,subvol=@snapshots /dev/sda2 /mnt/.snapshots
+mount /dev/sda1 /mnt/boot/efi
 
 echo "Install base packages"
 
