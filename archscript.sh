@@ -40,12 +40,12 @@ umount /mnt
 
 echo "btrfs configuration"
 
-mount -o compress=zstd:1,noatime,subvol=@ /dev/vda2 /mnt
+mount -o compress=zstd,noatime,ssd,subvol=@ /dev/vda2 /mnt
 mkdir -p /mnt/{boot/efi,home,.snapshots,var/{cache,log}}
-mount -o compress=zstd:1,noatime,subvol=@cache /dev/vda2 /mnt/var/cache
-mount -o compress=zstd:1,noatime,subvol=@home /dev/vda2 /mnt/home
-mount -o compress=zstd:1,noatime,subvol=@log /dev/vda2 /mnt/var/log
-mount -o compress=zstd:1,noatime,subvol=@snapshots /dev/vda2 /mnt/.snapshots
+mount -o compress=zstd,noatime,subvol=@cache /dev/vda2 /mnt/var/cache
+mount -o compress=zstd,noatime,ssd,subvol=@home /dev/vda2 /mnt/home
+mount -o compress=zstd,noatime,subvol=@log /dev/vda2 /mnt/var/log
+mount -o compress=zstd,noatime,subvol=@snapshots /dev/vda2 /mnt/.snapshots
 mount /dev/vda1 /mnt/boot/efi
 
 echo "Install base packages"

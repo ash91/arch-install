@@ -14,7 +14,7 @@ hwclock --systohc
 
 echo "Update mirrorlist"
 
-# reflector -c "India" -p https -a 3 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --country India --age 6 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo "Synchronize mirrors"
 
