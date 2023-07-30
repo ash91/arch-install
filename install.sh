@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#echo "Installing Wi-FI Driver"
+echo "Installing Wi-FI Driver"
 
-#./rtl8812au.sh
+./rtl8812au.sh
 
 echo "Installing yay(AUR Helper)"
 
@@ -58,11 +58,11 @@ sudo systemctl enable --now docker.socket
 # sudo usermod -aG disk $USER
 
 # Install GRUB themes
-git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
-cd Top-5-Bootloader-Themes
-sudo ./install.sh
-cd ..
-rm -rf Top-5-Bootloader-Themes
+#git clone https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes
+#cd Top-5-Bootloader-Themes
+#sudo ./install.sh
+#cd ..
+#rm -rf Top-5-Bootloader-Themes
 #Installing starship
 
 curl -sS https://starship.rs/install.sh | sh
