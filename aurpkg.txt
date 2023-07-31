@@ -1,5 +1,5 @@
 betterlockscreen
-google-chrome
+brave-bin
 librewolf-bin
 paru-bin
 redshift-gtk
