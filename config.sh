@@ -64,9 +64,9 @@ systemctl enable systemd-timesyncd.service
 
 echo "Grub installation"
 
-grub-install --target=i386-pc --recheck /dev/vda # for MBR installation
+#grub-install --target=i386-pc --recheck /dev/vda # for MBR installation
 
-# grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable # for UEFI
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable # for UEFI
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
