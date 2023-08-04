@@ -38,7 +38,7 @@ mv themes/* ~/.themes/
 
 mv icons/* ~/.icons/
 
-#cd ..
+cd ..
 
 #installing the vimix cursors
 
@@ -48,7 +48,7 @@ cd Vimix-cursors
 
 sudo ./install.sh
 
-# cd ..
+cd ..
 
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=$HOME/.icons
