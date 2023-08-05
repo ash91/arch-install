@@ -21,24 +21,24 @@ esac
 mkdir -p ~/.local/share/plank/themes/
 cp -r plank-themes/* ~/.local/share/plank/themes/
 
-echo "Installing rose-pine theme & icons"
+# echo "Installing rose-pine theme & icons"
 
 #Install Rose-Pine-GTK-Theme
 
 # Cloning the repo
 
-git clone https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git
+# git clone https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git
 
 mkdir ~/.themes
 mkdir ~/.icons
 
-cd Rose-Pine-GTK-Theme
+# cd Rose-Pine-GTK-Theme
 
-mv themes/* ~/.themes/
+# mv themes/* ~/.themes/
 
-mv icons/* ~/.icons/
+# mv icons/* ~/.icons/
 
-cd ..
+# cd ..
 
 #installing the vimix cursors
 
