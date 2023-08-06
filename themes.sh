@@ -21,7 +21,7 @@ esac
 mkdir -p ~/.local/share/plank/themes/
 cp -r plank-themes/* ~/.local/share/plank/themes/
 
-# echo "Installing rose-pine theme & icons"
+# echo "Installing theme & icons"
 
 #Install Rose-Pine-GTK-Theme
 
