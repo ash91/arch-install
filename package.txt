@@ -5,11 +5,6 @@ cups-pdf
 docker
 docker-compose
 evince
-foomatic-db
-foomatic-db-gutenprint-ppds
-foomatic-db-nonfree
-foomatic-db-nonfree-ppds
-foomatic-db-ppds
 gdb
 gsfonts
 gutenprint
