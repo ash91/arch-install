@@ -5,6 +5,7 @@ echo "1 - XFCE"
 echo "2 - GNOME"
 echo "3 - KDE"
 echo "4 - Cinnamon"
+echo "5 - Qtile"
 
 echo -n "Enter Desktop Environment of your choice: "
 
@@ -15,6 +16,7 @@ case $distro in
     2) yay -S gnome gnome-extra gnome-themes-extra gnome-tweaks gtk-engine-murrine --noconfirm && sudo systemctl enable --now gdm;;
     3) yay -S plasma --noconfirm && sudo systemctl enable --now sddm;;
     4) yay -S cinnamon lightdm lightdm-gtk-greeter --noconfirm && sudo systemctl enable --now lightdm;;
+    5) yay -S qtile && sudo systemctl enable --now lightdm;;
     *) echo "Please enter valid choice."
 esac
 #Download plank themes
