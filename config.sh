@@ -104,3 +104,5 @@ echo ""
 
 
 echo "exit from chroot and then reboot"
+exit
+reboot
