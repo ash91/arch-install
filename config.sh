@@ -7,16 +7,16 @@
 #  \____\___/|_| |_|_| |_|\__, |\__,_|_|  \__,_|\__|_|\___/|_| |_|
 #       
 
-echo "Set System Time"
+echo ":: Set System Time ::"
 
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 hwclock --systohc
 
-echo "Update mirrorlist"
+echo ":: Update mirrorlist ::"
 
 reflector --country India --age 6 --sort rate --save /etc/pacman.d/mirrorlist
 
-echo "Synchronize mirrors"
+echo ":: Synchronize mirrors ::"
 
 pacman -Syy
 
@@ -26,7 +26,7 @@ echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 
-echo "Set hostname and localhost"
+echo ":: Set hostname and localhost ::"
 
 echo "vasuki" >> /etc/hostname
 echo "127.0.0.1     localhost" >> /etc/hosts
@@ -49,7 +49,7 @@ read username
 useradd -m -G wheel $username
 passwd $username
 
-echo "Enable Services"
+echo ":: Enable Services ::"
 
 systemctl enable NetworkManager
 systemctl enable bluetooth
@@ -62,7 +62,7 @@ systemctl enable firewalld
 systemctl enable acpid
 systemctl enable systemd-timesyncd.service
 
-echo "Grub installation"
+echo ":: Grub installation ::"
 
 #grub-install --target=i386-pc --recheck /dev/vda # for MBR installation
 
@@ -71,11 +71,11 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB 
 grub-mkconfig -o /boot/grub/grub.cfg
 
 
-echo "## Add btrfs and setfont to mkinitcpio
+echo ":: Add btrfs and setfont to mkinitcpio
 
 ## Before: BINARIES=()
 
-## After: BINARIES=(btrfs setfont)"
+## After: BINARIES=(btrfs setfont) ::"
 
 sed -i 's/BINARIES=()/BINARIES=(btrfs setfont)/g' /etc/mkinitcpio.conf
 mkinitcpio -p linux
