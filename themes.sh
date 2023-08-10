@@ -41,7 +41,7 @@ git clone https://github.com/dracula/gtk.git
 
 cd gtk
 
-cp -r * ~/.themes
+cp -r ./* ~/.themes
 cp -r ./kde/cursors/Dracula-cursors ~/.icons
 cp -r ./kde/kvantum/* ~/.local/share/kvantum/
 cd ..
