@@ -23,7 +23,7 @@ esac
 mkdir -p ~/.local/share/plank/themes/
 cp -r plank-themes/* ~/.local/share/plank/themes/
 
-# echo "Installing theme & icons"
+echo "::)) Installing theme & icons ((::"
 
 #Install Rose-Pine-GTK-Theme
 
@@ -31,8 +31,28 @@ cp -r plank-themes/* ~/.local/share/plank/themes/
 
 # git clone https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git
 
+echo "Installing 🧛🏻‍♂️ Dracula 🧛🏻‍♂️ Theme ::"
+
 mkdir ~/.themes
 mkdir ~/.icons
+mkdir -p ~/.local/share/kvantum/
+
+git clone https://github.com/dracula/gtk.git
+
+cd gtk
+
+cp -r * ~/.themes
+cp -r ./kde/cursors/Dracula-cursors ~/.icons
+cp -r ./kde/kvantum/* ~/.local/share/kvantum/
+cd ..
+rm -rf gtk
+
+git clone https://github.com/m4thewz/dracula-icons.git
+cd dracula-icons
+cp -r * ~/.icons
+cd..
+rm -rf dracula-icons
+
 
 # cd Rose-Pine-GTK-Theme
 
@@ -44,13 +64,13 @@ mkdir ~/.icons
 
 #installing the vimix cursors
 
-git clone https://github.com/vinceliuice/Vimix-cursors.git
+# git clone https://github.com/vinceliuice/Vimix-cursors.git
 
-cd Vimix-cursors
+# cd Vimix-cursors
 
-sudo ./install.sh
+# sudo ./install.sh
 
-cd ..
+# cd ..
 
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=$HOME/.icons
@@ -64,9 +84,11 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0
 # gsettings set org.gnome.desktop.wm.preferences theme "RosePine-Main-B"
 # gsettings set org.gnome.desktop.interface icon-theme 'Rose-Pine-Moon'
 
-xfconf-query -c xsettings -p /Net/ThemeName -s "RosePine-Main-B"
-xfconf-query -c xsettings -p /Net/IconThemeName -s "Rose-Pine-Moon"
+#gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
-rm -rf Vimix-cursors
+xfconf-query -c xsettings -p /Net/ThemeName -s "Dracula"
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Dracula"
 
-rm -rf Rose-Pine-GTK-Theme
+#rm -rf Vimix-cursors
+
+#rm -rf Rose-Pine-GTK-Theme
