@@ -1,5 +1,6 @@
 
 alacritty
+ansible
 bleachbit
 cups-pdf
 docker
