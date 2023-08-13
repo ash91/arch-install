@@ -29,7 +29,7 @@ for p in $(< aurpkg.txt); do yay -S --needed $p --noconfirm; done
 sudo usermod -aG docker $USER
 
 # Enable system services 
-#sudo systemctl enable --now libvirtd.service
+sudo systemctl enable --now libvirtd.service
 sudo systemctl enable --now docker.socket
 
 #Start Default Network for Networking
