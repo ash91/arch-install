@@ -19,7 +19,7 @@ case $distro in
     5) yay -S qtile && sudo systemctl enable lightdm;;
     *) echo "Please enter valid choice."
 esac
-#Download plank themes
+echo ":: Download plank themes ::"
 mkdir -p ~/.local/share/plank/themes/
 cp -r plank-themes/* ~/.local/share/plank/themes/
 
