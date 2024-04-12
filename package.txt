@@ -5,7 +5,6 @@ bleachbit
 cups-pdf
 docker
 docker-compose
-evince
 gdb
 gsfonts
 gutenprint
